@@ -1,0 +1,41 @@
+h1{
+    color:rgb(39, 153, 247);
+    margin:1%;
+    font-size: 300%;
+}
+div{
+    height:100%;
+    width:95%;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid black;
+    margin-bottom:20px;
+    padding:10px;
+    border-color:rgb(8, 69, 239);
+    border-width: 5px;
+    border-style:solid;
+    border-radius: 10px;
+    border-left-color:rgb(235, 13, 13);
+    border-right-color:rgb(209, 235, 13);
+    border-top-color:rgb(12, 225, 129);
+    border-bottom-color:rgb(13, 231, 235);
+    border-radius: 10px 100px / 120px;
+    border-top-right-radius: 60%;
+    font-size:85%
+}
+button{
+    background-color:rgb(255, 255, 255);
+    color:rgb(8, 69, 239);
+    border: 1px solid black;
+    padding:5px;
+    border-color:rgb(8, 69, 239);
+    border-width: 5px;
+    border-style:solid;
+    border-radius: 10px;
+    border-left-color:rgb(235, 13, 13);
+    border-right-color:rgb(209, 235, 13);
+    border-top-color:rgb(12, 225, 129);
+    border-bottom-color:rgb(13, 231, 235);
+    border-radius: 10px 100px / 120px;
+    border-top-right-radius: 60%;
+    font-size:85%
+}

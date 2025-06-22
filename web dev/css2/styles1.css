@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #d02020; /* Quora Red */
+}
+
+/* Input Fields */
+.input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+/* Button Styles */
+button {
+    background-color: #d02020; /* Quora Red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #c01919;
+}
+
+/* Navigation Styles */
+nav {
+    margin: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d02020; /* Quora Red */
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+/* Follow Links */
+.follow {
+    color: #0099cc;
+}
+
+.follow:hover {
+    text-decoration: underline;
+}
+
+/* Upvote and Answer Button Styles */
+span button {
+    background-color: #0099cc; /* Blue Color for buttons */
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+span button:hover {
+    background-color: #007bb5;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    input.input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+.question {
+    font-size: 20px;
+    color: green;
+    margin: 10px 0;
+    text-decoration: underline;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}

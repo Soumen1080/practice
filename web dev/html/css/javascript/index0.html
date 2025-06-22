@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Sports Coach Finder</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Include the updated CSS here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 15px;
+            overflow: hidden; /* Ensures the answer doesn't overflow */
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            cursor: pointer;
+            color: #007BFF;
+            margin: 0;
+        }
+
+        .faq-answer {
+            max-height: 0; /* Start with a height of 0 */
+            overflow: hidden; /* Hide overflow */
+            transition: max-height 0.3s ease; /* Smooth transition for height */
+            margin-top: 10px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 100px; /* Set a max height for the expanded answer */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Your questions answered!</p>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <div class="faq-item">
+                <h3 class="faq-question">How do I register as a coach?</h3>
+                <p class="faq-answer">To register as a coach, click on the "Register" button on the homepage and fill out the required information.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How can students find coaches?</h3>
+                <p class="faq-answer">Students can search for coaches by sport, location, and availability using our search feature.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is there a fee for using the platform?</h3>
+                <p class="faq-answer">Registration is free for both coaches and students. However, some premium features may require a subscription.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I change my profile information later?</h3>
+                <p class="faq-answer">Yes, you can update your profile information at any time by logging into your account and navigating to the profile settings.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How do I contact support?</h3>
+                <p class="faq-answer">You can contact our support team through the "Contact Us" page or by emailing support@example.com.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                // Toggle the active class
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
